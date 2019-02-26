@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Competition: Sports Ball Master</title>
+  <script>
+    var manualHidden = true;
+    function downloadFile() {
+      window.location.href = "Sports_Ball_Master.jar";
+    }
+    function showUserManual() {
+      if (manualHidden) {
+        document.getElementById("user_manual").style.display = "inherit";
+      } else {
+        document.getElementById("user_manual").style.display = "none";
+      }
+      manualHidden = !manualHidden;
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="competition.css">
+</head>
+
+<body>
+  <header>
+    SPORTS BALL MASTER
+  </header>
+  <main>
+    <div id="main_window">
+      <center id="window_title">DOWNLOAD WINDOW</center>
+      <br />
+      <hr /><br />
+      Please Click The Download Button Below
+      <br />
+      <br />
+      Sports Ball Master is a team management system.
+      <div class="grey_box">
+      </div>
+      Keep track of teams, athletes, game days, and even statistics.
+      <div class="grey_box">
+      </div>
+      <div id="bottom_left">
+        <button onclick="downloadFile()">Download</button>
+
+        <button onclick="showUserManual()">User Manual</button>
+      </div>
+      <div id="bottom_right">
+        Need a User manual?<br />
+        Click the Button.
+      </div>
+    </div>
+    <article id="user_manual">
+      <embed src="UserManual.pdf" type="application/pdf" width="70%" height="500px" />
+    </article>
+  </main>
+  <footer>
+    Copyright &copy; 2018 Official Team 0, All rights reserved.
+  </footer>
+</body>
+
+</html>
